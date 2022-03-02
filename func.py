@@ -22,21 +22,21 @@ def recursive_func(accs):
     for i in range(0, len(accs)):
         for j in range(0, len(accs[i])):
             try:
-                accs[i][j].transfer_multiple([(new_accs[new_accs_index][0].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][1].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][2].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][3].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][4].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][5].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][6].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][7].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][8].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][9].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][10].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][11].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][12].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][13].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001)),
-                (new_accs[new_accs_index][14].address(), (accs[i][j].balance(unlocked="true")/16)-Decimal(0.0001))
+                accs[i][j].transfer_multiple([(new_accs[new_accs_index][0].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][1].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][2].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][3].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][4].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][5].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][6].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][7].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][8].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][9].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][10].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][11].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][12].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][13].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001)),
+                (new_accs[new_accs_index][14].address(), (accs[i][j].balance(unlocked="true")/15)-Decimal(0.0001))
                 ], priority=3)
                 new_accs_index+=1
             except NotEnoughMoney:
